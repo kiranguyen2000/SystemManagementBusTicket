@@ -8,6 +8,27 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      busId: {
+        type: Sequelize.INTEGER
+      },
+      driverId: {
+        type: Sequelize.INTEGER
+      },
+      origin: {
+        type: Sequelize.STRING
+      },
+      destination: {
+        type: Sequelize.STRING
+      },
+      departureTime: {
+        type: Sequelize.DATE
+      },
+      estimatedArrivalTime: {
+        type: Sequelize.DATE
+      },
+      fareAmount: {
+        type: Sequelize.STRING
+      },
       currentNumber: {
         type: Sequelize.INTEGER
       },
@@ -19,9 +40,6 @@ module.exports = {
       },
       timeType: {
         type: Sequelize.STRING
-      },
-      busId: {
-        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

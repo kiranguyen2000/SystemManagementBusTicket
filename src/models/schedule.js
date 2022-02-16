@@ -15,11 +15,17 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Schedule.init({
+    busId: DataTypes.INTEGER,
+    driverId: DataTypes.INTEGER,
+    origin: DataTypes.STRING,
+    destination: DataTypes.STRING,
+    departureTime: DataTypes.DATE,
+    estimatedArrivalTime: DataTypes.DATE,
+    fareAmount: DataTypes.STRING,
     currentNumber: DataTypes.INTEGER,
     maxNumber: DataTypes.INTEGER,
     date: DataTypes.DATE,
     timeType: DataTypes.STRING,
-    busId: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Schedule',
