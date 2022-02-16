@@ -8,9 +8,9 @@ module.exports = {
       firstName: 'Hung',
       lastName: 'Nguyen',
       address: 'Da Nang',
+      phonenumber: '0988110785',
       gender: 1,
-      typeRole: 'ROLE',
-      keyRole: 'R1',
+      roleId: 'R1',
       createdAt: new Date(),
       updatedAt: new Date()
     }]);
