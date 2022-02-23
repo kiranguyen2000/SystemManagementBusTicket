@@ -1,4 +1,3 @@
-import { reject } from 'bcrypt/promises';
 import bcrypt from 'bcryptjs';
 import db from '../models/index';
 
