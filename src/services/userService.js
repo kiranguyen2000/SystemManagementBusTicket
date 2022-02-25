@@ -19,8 +19,8 @@ let handleUserLogin = (email, password) => {
                     //compare password
                     // let check = true;
                     //let check = bcrypt.compareSync(password, user.password);
-                    //let check = bcrypt.compareSync( password, user.password); //error
-                    let check =  bcrypt.compare( password, user.password); //can login but can't check password
+                    let check = bcrypt.compareSync( password, user.password); //error
+                    //let check =  bcrypt.compareSync( password, user.password); //can login but can't check password
                     if(check){
                         userData.errCode = 0;
                         userData.errMessage = 'OK';
